@@ -1,3 +1,4 @@
+__author__ = "Brayan Aroche"
 class NodoPila(object):
 	def __init__(self,dato):
 		self.siguiente = None
