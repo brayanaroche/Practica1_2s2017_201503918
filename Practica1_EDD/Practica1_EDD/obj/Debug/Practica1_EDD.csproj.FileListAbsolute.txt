@@ -1,0 +1,11 @@
+c:\users\aroche\documents\visual studio 2015\Projects\Practica1_EDD\Practica1_EDD\bin\Debug\Practica1_EDD.exe.config
+c:\users\aroche\documents\visual studio 2015\Projects\Practica1_EDD\Practica1_EDD\bin\Debug\Practica1_EDD.exe
+c:\users\aroche\documents\visual studio 2015\Projects\Practica1_EDD\Practica1_EDD\bin\Debug\Practica1_EDD.pdb
+c:\users\aroche\documents\visual studio 2015\Projects\Practica1_EDD\Practica1_EDD\obj\Debug\Practica1_EDD.csprojResolveAssemblyReference.cache
+c:\users\aroche\documents\visual studio 2015\Projects\Practica1_EDD\Practica1_EDD\obj\Debug\Practica1_EDD.AdminMen.resources
+c:\users\aroche\documents\visual studio 2015\Projects\Practica1_EDD\Practica1_EDD\obj\Debug\Practica1_EDD.Dashboard.resources
+c:\users\aroche\documents\visual studio 2015\Projects\Practica1_EDD\Practica1_EDD\obj\Debug\Practica1_EDD.Form1.resources
+c:\users\aroche\documents\visual studio 2015\Projects\Practica1_EDD\Practica1_EDD\obj\Debug\Practica1_EDD.Properties.Resources.resources
+c:\users\aroche\documents\visual studio 2015\Projects\Practica1_EDD\Practica1_EDD\obj\Debug\Practica1_EDD.csproj.GenerateResource.Cache
+c:\users\aroche\documents\visual studio 2015\Projects\Practica1_EDD\Practica1_EDD\obj\Debug\Practica1_EDD.exe
+c:\users\aroche\documents\visual studio 2015\Projects\Practica1_EDD\Practica1_EDD\obj\Debug\Practica1_EDD.pdb
