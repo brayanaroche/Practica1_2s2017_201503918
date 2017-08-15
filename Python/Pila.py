@@ -1,6 +1,9 @@
 __author__ = "Brayan Aroche"
 
+#from subprocess import  Popen
+import subprocess
 import	NodoPila
+
 Nodo= NodoPila
 
 class Pila():

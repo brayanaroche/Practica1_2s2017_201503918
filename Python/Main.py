@@ -1,4 +1,3 @@
-__author__ = "Brayan Aroche"
 from Pila import Pila
 p = Pila()
 print p.Vacia()
@@ -9,9 +8,10 @@ p.push("Hola")
 p.push(5)
 p.pop()
 p.imprimir()
-p.push("Como estas")
+p.push("Como_estas")
 p.push("Perro")
 p.pop()
-p.push("Si sale XD")
+p.push("Si_sale_XD")
+p.push("funciona")
 p.imprimir()
 p.GenerarGrafico()

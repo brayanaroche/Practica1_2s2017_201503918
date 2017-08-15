@@ -1,4 +1,3 @@
-__author__ = "Brayan Aroche"
 class NodoLista(object):
 	def __init__(self,dato):
 		self.dato=dato

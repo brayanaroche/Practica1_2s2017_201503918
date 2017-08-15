@@ -1,4 +1,3 @@
-__author__ = "Brayan Aroche"
 import NodoLista
 Lista = NodoLista
 #import subprocess
