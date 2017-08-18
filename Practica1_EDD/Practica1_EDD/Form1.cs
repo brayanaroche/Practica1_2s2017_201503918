@@ -16,5 +16,13 @@ namespace Practica1_EDD
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 form = new Form1();
+            form.Hide();
+            Dashboard das = new Dashboard();
+            das.Show();            
+        }
     }
 }
