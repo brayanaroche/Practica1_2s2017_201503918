@@ -1,6 +1,8 @@
+__author__ = "Brayan Aroche"
+
 import NodoLista
 Lista = NodoLista
-#import subprocess
+import subprocess
 
 class ListaSimple():
 
@@ -28,8 +30,7 @@ class ListaSimple():
 			self.ultimo=nuevo
 
 		self.tamano=self.tamano+1
-
-
+		
 	def buscar(self,objeto):
 		Actual=self.inicio
 		contador=0
@@ -46,8 +47,7 @@ class ListaSimple():
 				return "El dato se encontro en el indice: "+ str(contador)
 
 			return "Dato no encontrado"
-
-
+	
 	def eliminar(self,posicion):
 
 		indice = int(posicion)
@@ -119,3 +119,28 @@ class ListaSimple():
 
 	#Ejecutamos el comando el subproceso	
 		subprocess.Popen("dot -Tpng C:\graficas\Lista.txt -o C:\graficas\Lista.png")	
+
+
+	def RecorridoListaSimple(self):
+
+		f=open("C:\graficas\Reporte.html","w")
+		f.write("<!DOCTYPE html>\n<html>\n<head>\n<title>Reporte</title>\n </head>\n<body>\n<table style=\"width:100%\"><tr>\n")
+		f.write("<th>Nodo</th>\n<th>Ip</th> \n<th>Carne</th> \n </tr> \n")		
+	#Declaramos una variable auxiliar y la apuntamos al inicio
+		Actual =self.inicio
+		f.write("<tr>\n<td>"+str(Actual.dato)+"</td>")
+	#Recorremos los nodos en busca de llegar hasta el ultimo
+		while Actual!=self.ultimo:
+	#Si nuestra variable auxiliar es igual al inicio entonces imprime el primer nodo 
+			if Actual==self.inicio:
+				Actual
+			else:
+	#De lo contrario qu siga imprimiendo nodos
+				f.write("<td>"+str(Actual.dato)+"</td></tr>")
+	#Hacemos que el nodo sea el siguiente
+			Actual=Actual.getEnlace()
+	#Al terminar el ciclo si el nodo actual es igual al ultimo que lo escriba
+		if Actual==self.ultimo and Actual!=self.inicio:
+			f.write("</tr></table><div>"+str(self.ultimo.dato)+"</div>")
+		else:
+			f.write("</body></html>")		

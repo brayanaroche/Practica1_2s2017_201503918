@@ -67,14 +67,16 @@ namespace Practica1_EDD
             MessageBox.Show("la ruta es: " + direccion);
             var cliente = new RestClient("http://127.0.0.1:5000/ArchivoJson");
 
-            var request = new RestRequest("/", Method.GET);
+            var request = new RestRequest("/", Method.POST);
 
             request.AddParameter("ruta", direccion);
 
             IRestResponse respuesta = cliente.Execute(request);
 
             var contenido = respuesta.Content;
-            MessageBox.Show("el contenido de vuelta es: " + contenido);
+            webBrowser1.Navigate(respuesta.Content);
+            //webBrowser1.DocumentText = respuesta.Content;
+            //MessageBox.Show("el contenido de vuelta es: " + contenido);
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -21,11 +21,15 @@ def AbrirArchivo():
 	#ruta = str(request.form["ruta"])
 	#parametro = request.args.get(ruta,'No contiene ruta')
 	parametro = str(request.form["ruta"])
-	arjson.Lectura(parametro)
-	return 'La ruta es: ' + parametro
+	arjson.Lectura(parametro)	
+	return "C:\graficas\Reporte.html"
 
 @app.route('/hola', methods =['GET'])
 def index():
+	listaS.insertar(1)
+	listaS.insertar(2)
+	listaS.GenerarGrafico()
+
 	return "Hello World Brayan aroche"
 
 if __name__ == "__main__":
