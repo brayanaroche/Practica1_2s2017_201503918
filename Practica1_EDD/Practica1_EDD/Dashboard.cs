@@ -51,30 +51,37 @@ namespace Practica1_EDD
         }
 
         private async void metodo_POST() {
+            try
+            {
 
-            //Abriendo archivo para obtener el path
+                //Abriendo archivo para obtener el path
 
-            OpenFileDialog abrir_archivo = new OpenFileDialog();
-            abrir_archivo.Title = "Seleccionar Archivo";
+                OpenFileDialog abrir_archivo = new OpenFileDialog();
+                abrir_archivo.Title = "Seleccionar Archivo";
 
-            if (abrir_archivo.ShowDialog() == System.Windows.Forms.DialogResult.OK) {
-                StreamReader leer = new StreamReader(abrir_archivo.FileName);
-                leer.Close();                
+                if (abrir_archivo.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    StreamReader leer = new StreamReader(abrir_archivo.FileName);
+                    leer.Close();
+                }
+
+                string direccion = abrir_archivo.FileName;
+
+                MessageBox.Show("la ruta es: " + direccion);
+                var cliente = new RestClient("http://127.0.0.1:5000/ArchivoJson");
+
+                var request = new RestRequest("/", Method.POST);
+
+                request.AddParameter("ruta", direccion);
+
+                IRestResponse respuesta = cliente.Execute(request);
+
+                var contenido = respuesta.Content;
+                webBrowser1.Navigate(respuesta.Content);
             }
-
-            string direccion = abrir_archivo.FileName;
-
-            MessageBox.Show("la ruta es: " + direccion);
-            var cliente = new RestClient("http://127.0.0.1:5000/ArchivoJson");
-
-            var request = new RestRequest("/", Method.POST);
-
-            request.AddParameter("ruta", direccion);
-
-            IRestResponse respuesta = cliente.Execute(request);
-
-            var contenido = respuesta.Content;
-            webBrowser1.Navigate(respuesta.Content);
+            catch (Exception e) {
+                Console.WriteLine("Se produjo un error: " + e);
+            }
             //webBrowser1.DocumentText = respuesta.Content;
             //MessageBox.Show("el contenido de vuelta es: " + contenido);
         }

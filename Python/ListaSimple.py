@@ -136,7 +136,8 @@ class ListaSimple():
 				Actual
 			else:
 	#De lo contrario qu siga imprimiendo nodos
-				f.write("<td>"+str(Actual.dato)+"</td><td>"+ Actual.getEnlace+"</td></tr>")
+				f.write("<td>"+str(Actual.dato)+"</td>")
+
 	#Hacemos que el nodo sea el siguiente
 			Actual=Actual.getEnlace()
 			#f.write("<td>"+str(Actual.dato)+"</td></tr><tr>")
