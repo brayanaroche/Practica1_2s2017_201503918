@@ -136,9 +136,10 @@ class ListaSimple():
 				Actual
 			else:
 	#De lo contrario qu siga imprimiendo nodos
-				f.write("<td>"+str(Actual.dato)+"</td></tr>")
+				f.write("<td>"+str(Actual.dato)+"</td><td>"+ Actual.getEnlace+"</td></tr>")
 	#Hacemos que el nodo sea el siguiente
 			Actual=Actual.getEnlace()
+			#f.write("<td>"+str(Actual.dato)+"</td></tr><tr>")
 	#Al terminar el ciclo si el nodo actual es igual al ultimo que lo escriba
 		if Actual==self.ultimo and Actual!=self.inicio:
 			f.write("</tr></table><div>"+str(self.ultimo.dato)+"</div>")
