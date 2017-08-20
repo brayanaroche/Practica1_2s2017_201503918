@@ -16,11 +16,13 @@ from flask import Flask, request, Response
 
 app = Flask("Practica1")
 #Metodo para Pila
-@app.route('/ArchivoJson',methods = ['GET'])
+@app.route('/ArchivoJson',methods = ['POST'])
 def AbrirArchivo():
-	parametro = request.args.get('ruta','No contiene ruta')
+	#ruta = str(request.form["ruta"])
+	#parametro = request.args.get(ruta,'No contiene ruta')
+	parametro = str(request.form["ruta"])
 	arjson.Lectura(parametro)
-	return 'La ruta es: {}'.format(parametro)
+	return 'La ruta es: ' + parametro
 
 @app.route('/hola', methods =['GET'])
 def index():

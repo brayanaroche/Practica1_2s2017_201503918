@@ -1,6 +1,6 @@
 __author__ = "Brayan Aroche"
 import json
-from pprint import pprint
+from ListaSimple import ListaSimple
 
 class Archivo_Json():
 	def __init__(self):
@@ -11,11 +11,19 @@ class Archivo_Json():
 		with open(path) as data_file:
 			data=json.load(data_file)
 			for key,value in data.iteritems():
-				#print "Local"+key		
-				for key1,value1 in value.iteritems():
+				print key		
+				for key1,value1 in value.iteritems():					
 					#print key1
+					#print value1
+					if key1 == 'local':				
+						#for i in value1:
+						print 'Local: '+value1
+					if key1 == 'mascara':				
+						#for i in value1:
+						print 'Mascara: '+value1
 					if key1 == 'nodo':				
 						for i in value1:
-							print i["ip"]
-							print i["carnet"]
-							print i["mascara"]			
+							print 'IP: '+ i["ip"]
+							print 'Carne: '+ i["carnet"]
+							print 'Mascara: '+ i["mascara"]			
+					
