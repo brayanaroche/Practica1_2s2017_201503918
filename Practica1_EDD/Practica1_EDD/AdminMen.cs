@@ -16,5 +16,12 @@ namespace Practica1_EDD
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MenCola cola = new MenCola();
+            cola.Show();
+            this.Hide();
+        }
     }
 }

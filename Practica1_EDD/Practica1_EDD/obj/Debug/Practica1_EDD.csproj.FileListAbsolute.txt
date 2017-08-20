@@ -10,3 +10,5 @@ c:\users\aroche\documents\visual studio 2015\Projects\Practica1_EDD\Practica1_ED
 c:\users\aroche\documents\visual studio 2015\Projects\Practica1_EDD\Practica1_EDD\obj\Debug\Practica1_EDD.exe
 c:\users\aroche\documents\visual studio 2015\Projects\Practica1_EDD\Practica1_EDD\obj\Debug\Practica1_EDD.pdb
 C:\Users\Aroche\documents\visual studio 2015\Projects\Practica1_EDD\Practica1_EDD\obj\Debug\Practica1_EDD.MenCola.resources
+C:\Users\Aroche\documents\visual studio 2015\Projects\Practica1_EDD\Practica1_EDD\bin\Debug\RestSharp.dll
+C:\Users\Aroche\documents\visual studio 2015\Projects\Practica1_EDD\Practica1_EDD\bin\Debug\RestSharp.xml

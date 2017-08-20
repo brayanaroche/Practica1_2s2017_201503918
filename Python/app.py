@@ -15,3 +15,9 @@ with open("C:\Users\Aroche\Documents\Cursos Usac\EDD\Practica 1\Practica1 EDD\Ar
 					print i["mascara"]
 					
 	#pprint(data["nodos"]["nodo"][1]["ip"])
+
+class ArchivoJSON(object):
+	def __init__(self, arg):
+		super(ArchivoJSON, self).__init__()
+		self.arg = arg
+		

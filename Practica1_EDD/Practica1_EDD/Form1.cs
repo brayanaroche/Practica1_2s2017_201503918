@@ -19,10 +19,18 @@ namespace Practica1_EDD
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 form = new Form1();
-            form.Hide();
+            //Form1 form = new Form1();
+            //form.Hide();
             Dashboard das = new Dashboard();
-            das.Show();            
+            das.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AdminMen adminmen = new AdminMen();
+            adminmen.Show();
+            this.Hide();
         }
     }
 }
